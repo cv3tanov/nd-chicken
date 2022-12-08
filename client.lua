@@ -18,7 +18,7 @@ local Keys = {
 local startX = 2388.37  --Да започнеш лова на пилета
 local startY = 5045.8
 local startZ = 46.37
----------------------------------------------
+---
 local portionX = -95.72   --Разфасоване
 local portionY = 6207.15
 local portionZ = 31.03
@@ -53,13 +53,7 @@ local karton
 local mieso
 local packs = 0
 
-
-
-
----------------------
--- Location --
----------------------
-
+--- Местоположение 
 Citizen.CreateThread(function()
 	local lapaniek = AddBlipForCoord(startX, startY, startZ)
 		SetBlipSprite (lapaniek, 126)
@@ -90,15 +84,13 @@ Citizen.CreateThread(function()
 		EndTextCommandSetBlipName(skupk)
 end)
 
--- Citizen --
----------------------
-
+--- Citizen 
 Citizen.CreateThread(function()
     while true do
 	Citizen.Wait(0)
 		local plyCoords = GetEntityCoords(GetPlayerPed(-1), false)
 		local dist = Vdist(plyCoords.x, plyCoords.y, plyCoords.z, startX, startY, startZ)
----
+			
 		if dist <= 20.0 then
 		DrawMarker(27, startX, startY, startZ-0.97, 0, 0, 0, 0, 0, 0, 0.90, 0.90, 0.90, 255, 255, 255, 200, 0, 0, 0, 0)
 		else
@@ -108,7 +100,7 @@ Citizen.CreateThread(function()
 		if dist <= 2.5 then
 		DrawText3D(startX, startY, startZ, "~g~[E]~w~Старт")
 		end
---
+			
 		if dist <= 0.5 then
 			if IsControlJustPressed(0, Keys['E']) then -- "E"
 			TriggerServerEvent("nd-chickenjob:startChicken")
