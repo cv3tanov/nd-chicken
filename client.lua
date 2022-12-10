@@ -14,28 +14,34 @@ local Keys = {
   
 
 
-------------------Конфиг----------------------
-local startX = 2388.37  --Да започнеш лова на пилета
+--- Конфиг ---
+--- Да започнеш лова на пилета
+local startX = 2388.37  
 local startY = 5045.8
 local startZ = 46.37
----
-local portionX = -95.72   --Разфасоване
+
+--- Разфасоване
+local portionX = -95.72   
 local portionY = 6207.15
 local portionZ = 31.03
----
-local portionX2 = -100.52   --Разфасоване
+
+--- Разфасоване
+local portionX2 = -100.52   
 local portionY2 = 6202.48
 local portionZ2 = 31.03
----
-local packingX = -106.44    --Опаковане
+
+--- Опаковане
+local packingX = -106.44    
 local packingY = 6204.29
 local packingZ = 31.02
----
-local packingX2 = -104.20   --Опаковане
+
+--- Опаковане
+local packingX2 = -104.20   
 local packingY2 = 6206.45
 local packingZ2 = 31.02
----
-local sellX = 180.18841    --Продажба
+
+--- Продажба
+local sellX = 180.18841    
 local sellY = -1637.882
 local sellZ = 29.291751
 
