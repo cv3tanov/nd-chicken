@@ -73,7 +73,7 @@ AddEventHandler('nd-chickenjob:sell', function()
         Player.Functions.AddMoney("cash", price, "sold-items")
         TriggerClientEvent('NDCore:Notify', src, 'Продадохте своите артикули за '..price..'$')
     else
-        TriggerClientEvent('NDCore:Notify', src, "Нямате артикули")
+        TriggerClientEvent('NDCore:Notify', src, "Няма какво да продадете")
     end
 end)
 
